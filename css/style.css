@@ -19,7 +19,7 @@ h2{
     text-align: center;
     color: white;
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .violet{
     height: 80px;
@@ -78,7 +78,7 @@ h2{
 .flex-center{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
 }
 .padding{
@@ -133,9 +133,8 @@ main > section{
 
 .card-right{
     width: 40%;
-    
-
 }
+
 div .card-right img{
     width: 100%;
      display: block;
@@ -195,11 +194,14 @@ button{
     padding: 10px 20px;
 }
 /* section 3 */
-.container .center h2{
+section .container .center h2{
     color: var(--main-color-light-purple);
     margin: 20px 0;
     font-size: 2em;
 }
+/* section .container .center p{
+    color: black;
+} */
 .center{
     text-align: center;
 }
@@ -316,6 +318,7 @@ button{
  .margin-bottom{
     margin-bottom: 40px;
  }
+ 
  /* section6 */
  .new-button{
     background-color: white;
@@ -333,13 +336,17 @@ button{
     color: white;
     font-size: 3em;
 }
-.container .center p{
-    color: white;
-}
+
 h1{
     font-size: 4em;
     color: #FDC15F;
     margin-bottom: 20px;
+}
+.p-white-n{
+    color: white;
+}
+.p-white-n i {
+    
 }
 
 
