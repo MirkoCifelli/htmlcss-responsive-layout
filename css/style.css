@@ -218,11 +218,11 @@ button{
     border-radius: 50%;
 }
 .image-cropper {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     position: relative;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 80px;
 }
 
  .image-cropper img{
@@ -312,6 +312,9 @@ button{
  .violet-button{
     background-color: var(--main-color-light-purple);
     color: white;
+ }
+ .margin-bottom{
+    margin-bottom: 40px;
  }
  /* section6 */
  .new-button{
