@@ -1,9 +1,7 @@
 /* 
     RESET
 */
-*,
-::before,
-::after {
+*    {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,6 +15,94 @@ html {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+.small-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+:root {
+    --main-color:#0084FD;
+    --main-color-light:#B5DDFF;
+}
+.my-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.my-col{
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.bg-main-light{
+    background-color: var(--main-color-light);
+}
+
+
+
+
+
+/* HEADER */
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.main-container nav{
+    display: none;
+}
+header{
+    background-color:var(--main-color);
+    color: white;
+}
+.main-container nav li{
+    display: inline-block;
+}
+.main-container nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+/* MAIN */
+main > section{
+    padding: 40px 0;
+}
+
+/* RESPONSIVE */
+
+/* TABLET */
+@media screen and (min-width:768px){
+
+    .my-col-table-33{
+        width: calc((100% / 3)-20px);
+    }
+
+    .my-col-table-66{
+        width: calc(((100% / 3) * 2)-20px);
+    }
+}
+
+
+
+/* DEKSTOP */
+@media screen and (min-width:992px){
+    .main-container nav{
+        display: block;
+    }
+    .hamburger-container{
+        display: none;
+    }
+    .my-col-50{
+        width: calc(50% - 20px)
+    }
 }
