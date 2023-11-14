@@ -1,7 +1,9 @@
 /* 
     RESET
 */
-*    {
+*,
+::before,
+::after    {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,6 +14,12 @@
 */
 html {
     font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 .violet{
     height: 80px;
@@ -28,6 +36,11 @@ html {
     margin: 0 auto;
     padding: 0 20px;
 }
+/* .container-n {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+} */
 .small-container{
     max-width: 800px;
     margin: 0 auto;
@@ -36,6 +49,7 @@ html {
 :root {
     --main-color:#0084FD;
     --main-color-light:#B5DDFF;
+    --main-color-light-purple:#9792E4
 }
 .my-row{
     display: flex;
@@ -66,6 +80,15 @@ html {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+}
+.padding{
+    padding: 30px;
+}
+.center i{
+    margin: 0 5px;
+}
+span{
+    text-decoration: underline;
 }
 
 
@@ -107,6 +130,7 @@ main > section{
     margin-left: 10px;
     
 }
+
 .card-right{
     width: 40%;
     
@@ -145,7 +169,7 @@ button{
 
 
 #color-lightcoral{
-    background-color: #9792E4;
+    background-color:var(--main-color-light-purple);
 }
 .small-container h3{
     color: white;
@@ -154,7 +178,7 @@ button{
 }
 .small-container p{
     color: white;
-    font-size: 2em;
+    font-size: 1em;
     padding: 40px 10px;
 }
 .small-container .my-col-50 img{
@@ -172,7 +196,7 @@ button{
 }
 /* section 3 */
 .container .center h2{
-    color: #9792E4;
+    color: var(--main-color-light-purple);
     margin: 20px 0;
     font-size: 2em;
 }
@@ -180,7 +204,7 @@ button{
     text-align: center;
 }
 .back-color{
-    background-color: #9792E4;
+    background-color: var(--main-color-light-purple);
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -218,14 +242,131 @@ button{
     color: white;
     margin: 5px 10px;
  }
+
+ /* SEZIONE 4 */
+ div .card h2{
+    color: var(--main-color-light-purple);
+    font-size: 4em;
+    padding: 20px 0;
+ }
+ .color-white{
+    background-color: white;
+    border-radius: 20px;
+ }
+ .color-white h3{
+    color: #9792E4;
+ }
+ div .card button{
+    background-color: var(--main-color-light-purple);
+ }
+ .color-white h2{
+    text-align: left;
+    color: var(--main-color-light-purple);
+ }
+ 
+/* SEZIONE\5 */
+.my-col-right h2{
+    color: var(--main-color-light-purple);
+    text-align: left;
+}
+.my-col-right{
+    width: 70%;
+}
+.my-col-left{
+    width: 22%;
+}
+.img-border-n img{
+    width: 100%;
+    border-radius: 50%;
+}
+.image-cropper-n {
+    /* width: 250px; */
+    height: 300px;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 50%;
+}
+
+ .image-cropper img{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+     width: 150%;  
+    margin: 0 0 0 -20%;
+ }
+ .image-cropper-n i{
+    position: absolute;
+    left: 70%;
+    font-size: 3em;
+    color: var(--main-color-light-purple);
+ }
+ .image-cropper-n p{
+    margin-top: 10px;
+    color: var(--main-color-light-purple);
+    line-height: 1.8;
+ }
+ .special-p{
+    margin-top: 10px;
+    line-height: 1.8;
+ }
+ .violet-button{
+    background-color: var(--main-color-light-purple);
+    color: white;
+ }
+ /* section6 */
+ .new-button{
+    background-color: white;
+    border-radius: 20px;
+    color: var(--main-color-light-purple);
+    padding: 20px 60px;
+ }
+.center{
+    text-align: center;
+}
+.container .center h3{
+    color: rgba(255, 255, 255, 0.7);
+}
+.container .center h2{
+    color: white;
+    font-size: 3em;
+}
+.container .center p{
+    color: white;
+}
+h1{
+    font-size: 4em;
+    color: #FDC15F;
+    margin-bottom: 20px;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: #333333;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+footer p{
+    color: white;
+    margin-bottom: 50px;
+}
+footer span{
+    color: var(--main-color-light-purple);
+    text-decoration: underline;
+}
+
 /* RESPONSIVE */
 
 /* TABLET */
 @media screen and (min-width:768px){
-
+    .my-col-25{
+        width: calc(50% - 20px);
+    }
     .my-col-table-33{
         width: calc((100% / 3) - 20px);
-    }
+    } 
 
     .my-col-table-66{
         width: calc(((100% / 3) * 2) - 20px);
@@ -243,8 +384,6 @@ button{
         display: flex;
         flex-wrap: nowrap;
     }
-}
-
 
 
 /* DEKSTOP */
@@ -258,13 +397,16 @@ button{
     .my-col-50{
         width: calc(50% - 20px)
     }
-    /* .my-row{
-        align-items: flex-end;
-    } */
     .card-white{
         position: relative;
-        top: 25%;
+        top: 10%;
         margin-left: 40px;
+    }
+    .my-col-table-66{
+        width: calc(((100% / 3) * 2) - 20px);
+    }
+    .my-col-25{
+        width: calc((100% / 3) - 20px);
     }
    
     
