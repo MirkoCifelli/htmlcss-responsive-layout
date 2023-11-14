@@ -213,6 +213,11 @@ button{
     margin-left: 20px;
     text-align: left;
  }
+ .card .margin-top p > i{
+    font-size: large;
+    color: white;
+    margin: 5px 10px;
+ }
 /* RESPONSIVE */
 
 /* TABLET */
