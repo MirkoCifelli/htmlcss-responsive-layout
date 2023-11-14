@@ -14,6 +14,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -46,7 +47,12 @@ html {
 .bg-main-light{
     background-color: var(--main-color-light);
 }
-
+.main-container li .special-button{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 0;
+}
 
 
 
@@ -78,17 +84,54 @@ main > section{
     padding: 40px 0;
 }
 
+/* section1 */
+.card{
+    width: 100%;
+    
+}
+.card-left{
+    width: calc(60% - 10px);
+    margin-left: 10px;
+    display: inline-block;
+}
+.card-right{
+    width: 40%;
+    display: inline-block;
+
+}
+div .card-right img{
+    width: 100%;
+    /* display: block; */
+
+
+}
+h3{
+    color: var(--main-color);
+    margin-top: 20px;
+}
+button{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+}
+h3,
+p,
+button{
+    margin-bottom: 20px;
+}
 /* RESPONSIVE */
 
 /* TABLET */
 @media screen and (min-width:768px){
 
     .my-col-table-33{
-        width: calc((100% / 3)-20px);
+        width: calc((100% / 3) - 20px);
     }
 
     .my-col-table-66{
-        width: calc(((100% / 3) * 2)-20px);
+        width: calc(((100% / 3) * 2) - 20px);
     }
 }
 
@@ -105,4 +148,5 @@ main > section{
     .my-col-50{
         width: calc(50% - 20px)
     }
+    
 }
